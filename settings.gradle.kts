@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Base Project Setup"
 include(":app")
- 
+include(":core:design")
