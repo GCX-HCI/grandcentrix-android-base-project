@@ -23,6 +23,9 @@ internal fun Project.configureKotlinDetekt() {
         )
         parallel = true
         buildUponDefaultConfig = true
+        // ignore failures to run detekt for all submodules in order to get the full picture on CI
+        ignoreFailures = true
+
         reports {
             sarif.required.set(true)
             sarif.outputLocation.set(file("build/reports/detekt.sarif"))
