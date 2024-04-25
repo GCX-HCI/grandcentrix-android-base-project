@@ -11,6 +11,9 @@ internal fun configureAndroidLint(commonExtension: CommonExtension<*, *, *, *, *
             abortOnError = false
             checkReleaseBuilds = false
             sarifReport = true
+            xmlReport = false
+            htmlReport = false
+            textReport = false
         }
     }
 }
