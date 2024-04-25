@@ -8,3 +8,5 @@ gem 'danger'
 gem 'danger-android_lint'
 # Add-on to process junit result files
 gem 'danger-junit'
+# Add-on to process sarif result files
+gem 'danger-sarif'

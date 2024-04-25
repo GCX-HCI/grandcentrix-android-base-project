@@ -13,6 +13,11 @@ for lint_report_file in Dir.glob("**/lint-results-*.xml") do
     android_lint.lint(inline_mode: true)
 end
 
+for detekt_report_file in Dir.glob("**/detekt.sarif") do
+    # Process detekt results
+    sarif.report detekt_report_file
+end
+
 for test_report_file in Dir.glob("**/build/test-results/**/TEST-*.xml") do
     junit.parse test_report_file
     junit.show_skipped_tests = true
