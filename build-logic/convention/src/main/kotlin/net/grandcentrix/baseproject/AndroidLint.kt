@@ -10,8 +10,8 @@ internal fun configureAndroidLint(commonExtension: CommonExtension<*, *, *, *, *
         lint {
             abortOnError = false
             checkReleaseBuilds = false
-            sarifReport = true
-            xmlReport = false
+            xmlReport = true
+            sarifReport = false
             htmlReport = false
             textReport = false
         }

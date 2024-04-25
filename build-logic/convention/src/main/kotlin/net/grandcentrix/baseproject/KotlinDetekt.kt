@@ -27,10 +27,10 @@ internal fun Project.configureKotlinDetekt() {
         ignoreFailures = true
 
         reports {
-            sarif.required.set(true)
-            sarif.outputLocation.set(file("build/reports/detekt.sarif"))
+            xml.required.set(true)
+            xml.outputLocation.set(file("build/reports/detekt.xml"))
 
-            xml.required.set(false)
+            sarif.required.set(false)
             html.required.set(false)
             txt.required.set(false)
             md.required.set(false)
