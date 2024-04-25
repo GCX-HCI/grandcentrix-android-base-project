@@ -36,4 +36,5 @@ kotlin_gradle_plugin = { id = "org.jetbrains.kotlin:kotlin-gradle-plugin", versi
 
 # Plugins defined by this project
 grandcentrix_application = { id = "net.grandcentrix.android.application", version = "unspecified" }
+grandcentrix_library = { id = "net.grandcentrix.android.library", version = "unspecified" }
 

@@ -42,5 +42,9 @@ gradlePlugin {
             id = "net.grandcentrix.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
+        register("androidLibrary") {
+            id = "net.grandcentrix.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
     }
 }
