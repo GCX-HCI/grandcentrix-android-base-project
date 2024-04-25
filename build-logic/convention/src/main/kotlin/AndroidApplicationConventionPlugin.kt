@@ -1,7 +1,6 @@
 import com.android.build.api.dsl.ApplicationExtension
 import net.grandcentrix.baseproject.AppConfig
 import net.grandcentrix.baseproject.configureAndroidCompose
-import net.grandcentrix.baseproject.configureAndroidLint
 import net.grandcentrix.baseproject.configureBuildTypes
 import net.grandcentrix.baseproject.configureKotlinAndroid
 import org.gradle.api.Plugin
@@ -36,7 +35,6 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 tasks.withType<Test> {
                     useJUnitPlatform()
                 }
-                configureAndroidLint(this)
             }
         }
     }

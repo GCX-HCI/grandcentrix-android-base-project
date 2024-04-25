@@ -27,6 +27,7 @@ repositories {
 dependencies {
     compileOnly(libs.plugins.android.gradle.plugin.get().toString())
     compileOnly(libs.plugins.kotlin.gradle.plugin.get().toString())
+    compileOnly(libs.plugins.detekt.gradle.plugin.get().toString())
 }
 
 tasks {
@@ -45,6 +46,14 @@ gradlePlugin {
         register("androidLibrary") {
             id = "net.grandcentrix.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
+        }
+        register("applicationLint") {
+            id = "net.grandcentrix.application.lint"
+            implementationClass = "ApplicationLintConventionPlugin"
+        }
+        register("libraryLint") {
+            id = "net.grandcentrix.library.lint"
+            implementationClass = "LibraryLintConventionPlugin"
         }
     }
 }
