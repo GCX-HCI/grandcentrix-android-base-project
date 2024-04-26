@@ -8,3 +8,5 @@ gem 'danger'
 gem 'danger-android_lint'
 # Add-on to process junit result files
 gem 'danger-junit'
+# Add-on to process detekt result files
+gem 'danger-kotlin_detekt'

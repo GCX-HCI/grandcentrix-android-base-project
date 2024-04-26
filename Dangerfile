@@ -13,6 +13,14 @@ for lint_report_file in Dir.glob("**/lint-results-*.xml") do
     android_lint.lint(inline_mode: true)
 end
 
+for detekt_report_file in Dir.glob("**/detekt.xml") do
+    # Process detekt results
+    kotlin_detekt.skip_gradle_task = true # do this if lint was already run in a previous build step
+    kotlin_detekt.report_file = detekt_report_file
+    kotlin_detekt.filtering = true
+    kotlin_detekt.detekt(inline_mode: true)
+end
+
 for test_report_file in Dir.glob("**/build/test-results/**/TEST-*.xml") do
     junit.parse test_report_file
     junit.show_skipped_tests = true

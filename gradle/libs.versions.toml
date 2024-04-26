@@ -4,6 +4,7 @@
 android-build-tools-version = "34.0.0"
 android-gradle-plugin = "8.3.2"
 kotlin = "1.9.23"
+detekt = "1.23.6"
 
 # Androidx
 androidx-appcompat = "1.6.1"
@@ -33,8 +34,12 @@ android-library = { id = "com.android.library", version.ref = "android-gradle-pl
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android_gradle_plugin = { id = "com.android.tools.build:gradle", version.ref = "android-gradle-plugin" }
 kotlin_gradle_plugin = { id = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+detekt-gradle-plugin = { id = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 
 # Plugins defined by this project
 grandcentrix_application = { id = "net.grandcentrix.android.application", version = "unspecified" }
 grandcentrix_library = { id = "net.grandcentrix.android.library", version = "unspecified" }
+grandcentrix_application-lint = { id = "net.grandcentrix.application.lint", version = "unspecified" }
+grandcentrix_library-lint = { id = "net.grandcentrix.library.lint", version = "unspecified" }
 

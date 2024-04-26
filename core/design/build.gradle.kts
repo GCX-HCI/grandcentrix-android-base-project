@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.grandcentrix.library)
+    alias(libs.plugins.grandcentrix.library.lint)
 }
 
 android {

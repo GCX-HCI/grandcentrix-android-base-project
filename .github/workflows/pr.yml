@@ -67,8 +67,12 @@ jobs:
           report_paths: '**/build/test-results/**/TEST-*.xml'
           token: ${{ secrets.GITHUB_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Run lint
-        run: ./gradlew lintDebug
+      - name: Run android lint
+        run: ./gradlew lint
+        continue-on-error: true
+        timeout-minutes: 5
+      - name: Run kotlin lint
+        run: ./gradlew detektAll
         continue-on-error: true
         timeout-minutes: 5
 
