@@ -2,7 +2,7 @@
 
 # Gradle
 android-build-tools-version = "34.0.0"
-android-gradle-plugin = "8.3.2"
+android-gradle-plugin = "8.4.1"
 kotlin = "1.9.23"
 detekt = "1.23.6"
 
