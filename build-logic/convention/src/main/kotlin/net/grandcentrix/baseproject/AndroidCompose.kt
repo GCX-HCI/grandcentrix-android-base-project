@@ -9,13 +9,10 @@ import org.gradle.kotlin.dsl.dependencies
  */
 internal fun Project.configureAndroidCompose(commonExtension: CommonExtension<*, *, *, *, *, *>) {
     commonExtension.apply {
+        pluginManager.apply("org.jetbrains.kotlin.plugin.compose")
+
         buildFeatures {
             compose = true
-        }
-
-        composeOptions {
-            kotlinCompilerExtensionVersion =
-                libs.findVersion("androidx-compose-compiler").get().toString()
         }
 
         dependencies {
