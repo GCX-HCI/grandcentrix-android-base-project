@@ -13,7 +13,7 @@ androidx-coreKtx = "1.13.1"
 androidx-compose-bom = "2024.05.00"
 
 # Testing
-junit-jupiter = "5.10.2"
+junit-jupiter = "5.10.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-coreKtx" }
