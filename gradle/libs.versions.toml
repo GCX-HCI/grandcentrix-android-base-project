@@ -10,7 +10,7 @@ detekt = "1.23.6"
 androidx-appcompat = "1.7.0"
 androidx-activity = "1.9.0"
 androidx-coreKtx = "1.13.1"
-androidx-compose-bom = "2024.05.00"
+androidx-compose-bom = "2024.06.00"
 
 # Testing
 junit-jupiter = "5.10.3"
