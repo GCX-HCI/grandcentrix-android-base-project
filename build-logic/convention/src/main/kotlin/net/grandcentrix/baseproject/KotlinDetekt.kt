@@ -21,8 +21,8 @@ internal fun Project.configureKotlinDetekt() {
                 "src/test/java"
             )
         )
+        config.setFrom("${project.rootDir}/config/detekt/detekt.yml")
         parallel = true
-        buildUponDefaultConfig = true
         // ignore failures to run detekt for all submodules in order to get the full picture on CI
         ignoreFailures = true
 

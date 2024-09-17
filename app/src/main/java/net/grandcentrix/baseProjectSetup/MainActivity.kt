@@ -8,6 +8,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import net.grandcentrix.core.design.theme.AppTheme
 
 class MainActivity : AppCompatActivity() {
@@ -29,7 +30,7 @@ fun AndroidApp(modifier: Modifier = Modifier) {
     }
 }
 
-@androidx.compose.ui.tooling.preview.Preview
+@Preview
 @Composable
 private fun AndroidAppPreview() {
     AppTheme {
