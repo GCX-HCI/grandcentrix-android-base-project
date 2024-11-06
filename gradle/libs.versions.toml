@@ -3,7 +3,7 @@
 # Gradle
 android-gradle-plugin = "8.7.2"
 kotlin = "2.0.21"
-detekt = "1.23.6"
+detekt = "1.23.7"
 
 # Androidx
 androidx-appcompat = "1.7.0"
