@@ -1,7 +1,7 @@
 [versions]
 
 # Gradle
-android-gradle-plugin = "8.6.0"
+android-gradle-plugin = "8.7.2"
 kotlin = "2.0.20"
 detekt = "1.23.6"
 
