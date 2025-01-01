@@ -79,7 +79,7 @@ jobs:
       # Setup Ruby to allow for caching of danger install artifacts
       - name: Setup Ruby
         if: always() # always run even if the previous step fails
-        uses: ruby/setup-ruby@a2bbe5b1b236842c1cb7dd11e8e3b51e0a616acc # v1.202.0
+        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4 # v1.207.0
         with:
           ruby-version: '3.1.0'
           bundler-cache: true
