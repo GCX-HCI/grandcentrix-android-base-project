@@ -7,7 +7,7 @@ detekt = "1.23.7"
 
 # Androidx
 androidx-appcompat = "1.7.0"
-androidx-activity = "1.9.3"
+androidx-activity = "1.10.1"
 androidx-coreKtx = "1.15.0"
 androidx-compose-bom = "2024.11.00"
 
