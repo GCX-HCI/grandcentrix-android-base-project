@@ -62,7 +62,7 @@ jobs:
         continue-on-error: true
         timeout-minutes: 10
       - name: Annotate PR with JUnit Report
-        uses: mikepenz/action-junit-report@992d97d6eb2e5f3de985fbf9df6a04386874114d # v5.1.0
+        uses: mikepenz/action-junit-report@b14027d33d3a745ccc4d6a12f649e83110b5a373 # v5.4.0
         with:
           report_paths: '**/build/test-results/**/TEST-*.xml'
           token: ${{ secrets.GITHUB_TOKEN }}
